@@ -279,6 +279,177 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/27/面向对象01/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="QiGuo">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/uploads/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一山点水">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="一山点水" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/27/面向对象01/" itemprop="url">
+                  面向对象01
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-27T12:45:44+08:00">
+                2016-11-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/面向对象/" itemprop="url" rel="index">
+                    <span itemprop="name">面向对象</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <a href="/2016/11/27/面向对象01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/27/面向对象01/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/11/27/面向对象01/" class="leancloud_visitors" data-flag-title="面向对象01">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="面向对象概述"><a href="#面向对象概述" class="headerlink" title="面向对象概述"></a>面向对象概述</h1><h2 id="1-面向对象概念"><a href="#1-面向对象概念" class="headerlink" title="1.面向对象概念"></a>1.面向对象概念</h2><p>面向对象是面向过程的一个封装，一般应用于大型软件开发</p>
+<h2 id="2-工厂函数和构造函数"><a href="#2-工厂函数和构造函数" class="headerlink" title="2.工厂函数和构造函数"></a>2.工厂函数和构造函数</h2><p>函数返回的是一个对象，即为工厂函数，直接调用即可获取对象。<br>构造函数又名构造器，如果一个函数被用来创建一个实例化对象那么这就是构造函数，<br>构造函数配合new关键字来创建对象。构造函数与普通函数无异，一般首字母大写，只是使用方式不同。</p>
+<h2 id="3-类和实例"><a href="#3-类和实例" class="headerlink" title="3.类和实例"></a>3.类和实例</h2><p>类就是针对具有相同特征和特征对象的概述，在es6之前没有类，可以认为构造函数即为类。<br>通过构造函数创建出来的对象即为实例，实例的类型即为构造函数的名字，一般为Object</p>
+<h2 id="4-原型"><a href="#4-原型" class="headerlink" title="4.原型"></a>4.原型</h2><p>原型即为函数的prototype属性，在定义任何一个函数时，函数自己会创建一个对象，这个对象作为函数的prototype的属性存在。<br>作用即可以让实例对象共享和使用原型对象里面的属性和方法。</p>
+<h2 id="5-prototype"><a href="#5-prototype" class="headerlink" title="5.prototype"></a>5.prototype</h2><ul>
+<li>函数默认自有的一个属性，只在函数中存在</li>
+<li>因为他存的是原型对象的地址，所以又叫显示原型</li>
+<li>可以让以后实例的<strong>proto</strong>属性来根据构造函数的prototype来定</li>
+</ul>
+<h2 id="6-proto"><a href="#6-proto" class="headerlink" title="6.proto"></a>6.<strong>proto</strong></h2><ul>
+<li>所有对象都有的属性</li>
+<li>因为它存储的是函数隐式原型地址，所有又叫隐式原型</li>
+<li>当访问实例对象的属性时，如果自己没有，就去访问<strong>proto</strong>属性指向的原型对象的属性</li>
+</ul>
+<h2 id="7-new构造函数自动执行的4个步骤"><a href="#7-new构造函数自动执行的4个步骤" class="headerlink" title="7.new构造函数自动执行的4个步骤"></a>7.new构造函数自动执行的4个步骤</h2><ul>
+<li>自动创建一个新对象(开辟一个内存空间)</li>
+<li>给对象添加隐式原型属性(<strong>proto</strong> = 构造函数.prototype)</li>
+<li>执行构造器(这时候构造器里面的this指向新创建出来的对象)</li>
+<li>返回此对象的地址</li>
+</ul>
+<h2 id="8-属性查找规则和constructor"><a href="#8-属性查找规则和constructor" class="headerlink" title="8.属性查找规则和constructor"></a>8.属性查找规则和constructor</h2><p>先找自身，如果找到即返回，找不到则沿着<strong>proto</strong>一直往上找<br>constructor该属性的值是产生这个原型对象的函数地址</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/03/27/前端与后端交互/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -616,176 +787,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/02/09/bower初体验/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="QiGuo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/uploads/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="一山点水">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="一山点水" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/02/09/bower初体验/" itemprop="url">
-                  bower初体验
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-02-09T23:41:33+08:00">
-                2015-02-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2015/02/09/bower初体验/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/09/bower初体验/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/02/09/bower初体验/" class="leancloud_visitors" data-flag-title="bower初体验">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="Bower"><a href="#Bower" class="headerlink" title="Bower"></a>Bower</h1><hr>
-<h2 id="bower-简介"><a href="#bower-简介" class="headerlink" title="bower 简介"></a>bower 简介</h2><p>Bower 是 twitter 推出的一款包管理工具，基于nodejs的模块化思想，把功能分散到各个模块中，让模块和模块之间存在联系，通过 Bower 来管理模块间的这种联系。<br>确切的说，bower更是一个适用于Web端第三方包的一个自动化解决方案。</p>
-<hr>
-<h2 id="为什么使用bower"><a href="#为什么使用bower" class="headerlink" title="为什么使用bower"></a>为什么使用bower</h2><p>以往我们要使用JQuery、Bootstrap等模块，需要从网上找相应的资源,获取下载地址后，需要通过浏览器或者其他下载工具进行下载使用。Bower却为我们提供了更简洁的获取方式，只需要输入一条命令,需要的模块即可下载下来使用,例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">bower install JQuery</div><div class="line">bower install Bootstrap</div></pre></td></tr></table></figure></p>
-<p>bower 除了下载使用之外还支持更新、查找、卸载、保持依赖等操作.</p>
-<h2 id="bower安装"><a href="#bower安装" class="headerlink" title="bower安装"></a>bower安装</h2><p>上述提到我们为什么使用bower之后，我们简单介绍一下如何安装bower。bower的安装需要依赖node，npm和git.我们可以在node,git官网下载node,git进行安装，npm在安装node的时候y已经被自动安装上了，我们分别可以通过<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line">npm -v</div><div class="line">git --version</div></pre></td></tr></table></figure></p>
-<p>查看其版本号，确认是否安装成功，基于上述安装完成后，通过npm安装bower，如下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install --global bower</div></pre></td></tr></table></figure></p>
-<ul>
-<li>npm install –global bower即<ul>
-<li>在操作系统全局安装一个命令行软件（Command Line Interface）(CLI)</li>
-<li>执行上面的命令的时候在命令行的任意目录都可以直接执行</li>
-<li>安装结束之后，通过输入 bower –version 查看是否安装成功</li>
-</ul>
-</li>
-</ul>
-<p>怎么样，bower的安装是不是so easy！</p>
-          <!--noindex-->
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/02/09/bower初体验/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -831,7 +832,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -839,7 +840,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -848,7 +849,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
