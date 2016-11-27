@@ -279,6 +279,177 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/12/面向对象02/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="QiGuo">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/uploads/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一山点水">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="一山点水" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/05/12/面向对象02/" itemprop="url">
+                  面向对象02
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-12T13:25:55+08:00">
+                2016-05-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/面向对象/" itemprop="url" rel="index">
+                    <span itemprop="name">面向对象</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <a href="/2016/05/12/面向对象02/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/12/面向对象02/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/12/面向对象02/" class="leancloud_visitors" data-flag-title="面向对象02">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="面向对象的几种继承方式"><a href="#面向对象的几种继承方式" class="headerlink" title="面向对象的几种继承方式"></a>面向对象的几种继承方式</h1><h2 id="1-原型继承"><a href="#1-原型继承" class="headerlink" title="1.原型继承"></a>1.原型继承</h2><p><img src="http://smile0609.github.io/myblog/public/images/02.png" alt="image"></p>
+<h2 id="2-原型覆写"><a href="#2-原型覆写" class="headerlink" title="2.原型覆写"></a>2.原型覆写</h2><ul>
+<li>相对于原生的原型对象来说，constructor属性会丢失</li>
+<li>覆写原型时不要使用其他已经存在的对象</li>
+<li>不要再创建对象后覆写</li>
+</ul>
+<h2 id="3-copy继承"><a href="#3-copy继承" class="headerlink" title="3.copy继承"></a>3.copy继承</h2><p>就是将obj里面的东西copy一份给obj2</p>
+<h2 id="4-copy配合原型覆写继承"><a href="#4-copy配合原型覆写继承" class="headerlink" title="4.copy配合原型覆写继承"></a>4.copy配合原型覆写继承</h2><ul>
+<li>简化代码</li>
+<li>内置的属性不能遍历</li>
+<li>extend不会修改obj.prototype属性的值，所以先创建实例，再用extend进行扩充</li>
+<li>对象属性的访问方法<ul>
+<li>属性名语法(.)，不能用变量来访问，不支持数字。</li>
+<li>关联数组语法([]),中括号里面的东西是字符串类型，可以使用变量来访问，支持数字。</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-寄生式继承"><a href="#5-寄生式继承" class="headerlink" title="5.寄生式继承"></a>5.寄生式继承</h2><ul>
+<li>Object.create(要继承的对象)</li>
+<li>return一个新对象，这个新对象继承了传入create的方法对象</li>
+</ul>
+<h2 id="6-原型寄生组合式继承"><a href="#6-原型寄生组合式继承" class="headerlink" title="6.原型寄生组合式继承"></a>6.原型寄生组合式继承</h2><h2 id="7-原型组合式继承"><a href="#7-原型组合式继承" class="headerlink" title="7.原型组合式继承"></a>7.原型组合式继承</h2>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/06/面向对象01/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -586,194 +757,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/02/21/AngularJS/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="QiGuo">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/uploads/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="一山点水">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="一山点水" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/02/21/AngularJS/" itemprop="url">
-                  AngularJS
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-02-21T09:46:38+08:00">
-                2015-02-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/AngularJS/" itemprop="url" rel="index">
-                    <span itemprop="name">AngularJS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2015/02/21/AngularJS/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/21/AngularJS/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/02/21/AngularJS/" class="leancloud_visitors" data-flag-title="AngularJS">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="AngularJs"><a href="#AngularJs" class="headerlink" title="AngularJs"></a>AngularJs</h1><h2 id="AngularJs简介"><a href="#AngularJs简介" class="headerlink" title="AngularJs简介"></a>AngularJs简介</h2><p>AngularJS 是一个 JavaScript 框架。它可通过&lt;script&gt; 标签添加到 HTML 页面。<br>AngularJS 通过 指令 扩展了 HTML，且通过 表达式 绑定数据到 HTML。</p>
-<h2 id="AngularJs的应用场景"><a href="#AngularJs的应用场景" class="headerlink" title="AngularJs的应用场景"></a>AngularJs的应用场景</h2><ul>
-<li>重型的后台管理系统<ul>
-<li>有很多增删改查</li>
-<li>繁杂的DOM处理页面</li>
-</ul>
-</li>
-<li>单页面应用程序（SPA）<h2 id="AngularJs指令"><a href="#AngularJs指令" class="headerlink" title="AngularJs指令"></a>AngularJs指令</h2>AngularJS 指令是以 ng- 作为前缀的 HTML 属性， AngularJS 通过内置的指令来为应用添加功能， AngularJS 同时允许你自定义指令，从而构建更加超动感的 HTML。</li>
-</ul>
-<p>HTML5 允许扩展的（自制的）属性，以 data- 开头。 AngularJS 属性以 ng- 开头，但是也可以使用 data-ng- 来让网页对 HTML5 有效。</p>
-<h2 id="模块化：Module"><a href="#模块化：Module" class="headerlink" title="模块化：Module"></a>模块化：Module</h2><p>AngularJS 很重要的一个特性就是实现模块化编程，我们可以通过以下方式创建一个模块， 对页面进行功能业务上的划分。</p>
-<p>定义一个模块：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// 注意：必须指定第二个参数，否则变成获取已定义的模块</div><div class="line">var demoApp = angular.module(&apos;DemoApp&apos;, [])</div></pre></td></tr></table></figure></p>
-<p>获取已有模块：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var demoApp = angular.module(&apos;DemoApp&apos;)</div></pre></td></tr></table></figure></p>
-<p>定义依赖别的模块的模块：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var demoApp = angular.module(&apos;DemoApp&apos;, [&apos;Module1&apos;, &apos;Module2&apos;])</div></pre></td></tr></table></figure></p>
-<p>多个模块的形式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">angular.bootstrap(document, [&apos;demo&apos;])</div></pre></td></tr></table></figure></p>
-<p>正确的加载多个模块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">angular.module(&apos;MainModule&apos;, [&apos;Module1&apos;, &apos;Module2&apos;, &apos;Module3&apos;[,ModuleName]])</div></pre></td></tr></table></figure></p>
-<h2 id="控制器：Controller"><a href="#控制器：Controller" class="headerlink" title="控制器：Controller"></a>控制器：Controller</h2><ul>
-<li>控制器的三种主要职责<ul>
-<li>为应用中的模型设置初始状态</li>
-<li>通过 $scope 对象把数据模型或者函数行为暴露给视图</li>
-<li>监视模型的变化，做出相应的动作（$watch）<ul>
-<li>监视用户输入的用户名，检测是否被占用</li>
-<li>监视购物车的内容变化，计算最新结果，只能监视当前 $scope 上的成员</li>
-</ul>
-</li>
-<li>公共的抽象<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">angular.module(&apos;DemoApp&apos;, [])</div><div class="line">  .controller(&apos;DemoController&apos;, [&apos;$scope&apos;, function ($scope) &#123;</div><div class="line">    // 在这里通过操作 $scope 改变 View 和 ViewModel</div><div class="line">  &#125;])</div></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<p>定义控制器可以有三种方式，注意第一种已经被淘汰。</p>
-<p>第一种：传统方式，使用全局函数定义控制器：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function DemoCtrl($scope) &#123;</div><div class="line">  // code here</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>第二种：挂载在某个模块下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">angular.module(&apos;DemoApp&apos;, [])</div><div class="line">  .controller(&apos;DemoCtrl&apos;, function ($scope) &#123;</div><div class="line">    // code here</div><div class="line">  &#125;)</div></pre></td></tr></table></figure></p>
-<p>第三种：最正确的方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// 解决因为代码压缩造成注入对象失败问题的方式就是将第二个参数换成一个数组</div><div class="line">angular.module(&apos;DemoApp&apos;, [])</div><div class="line">  .controller(&apos;DemoCtrl&apos;, [&apos;$scope&apos;, &apos;$log&apos;, function ($scope, $log) &#123;</div><div class="line">    // code here</div><div class="line">  &#125;])</div></pre></td></tr></table></figure></p>
-          <!--noindex-->
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/02/21/AngularJS/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -819,7 +802,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
