@@ -279,7 +279,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/27/面向对象01/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/06/面向对象01/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="QiGuo">
@@ -304,7 +304,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/27/面向对象01/" itemprop="url">
+                <a class="post-title-link" href="/2016/05/06/面向对象01/" itemprop="url">
                   面向对象01
                 </a>
               
@@ -319,8 +319,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-27T12:45:44+08:00">
-                2016-11-27
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-06T12:45:44+08:00">
+                2016-05-06
               </time>
             
 
@@ -353,8 +353,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/11/27/面向对象01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/27/面向对象01/" itemprop="commentCount"></span>
+                <a href="/2016/05/06/面向对象01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/06/面向对象01/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -364,7 +364,7 @@
 
           
           
-             <span id="/2016/11/27/面向对象01/" class="leancloud_visitors" data-flag-title="面向对象01">
+             <span id="/2016/05/06/面向对象01/" class="leancloud_visitors" data-flag-title="面向对象01">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -390,30 +390,17 @@
 
       
         
-          
-            <h1 id="面向对象概述"><a href="#面向对象概述" class="headerlink" title="面向对象概述"></a>面向对象概述</h1><h2 id="1-面向对象概念"><a href="#1-面向对象概念" class="headerlink" title="1.面向对象概念"></a>1.面向对象概念</h2><p>面向对象是面向过程的一个封装，一般应用于大型软件开发</p>
+          <h1 id="面向对象概述"><a href="#面向对象概述" class="headerlink" title="面向对象概述"></a>面向对象概述</h1><h2 id="1-面向对象概念"><a href="#1-面向对象概念" class="headerlink" title="1.面向对象概念"></a>1.面向对象概念</h2><p>面向对象是面向过程的一个封装，一般应用于大型软件开发</p>
 <h2 id="2-工厂函数和构造函数"><a href="#2-工厂函数和构造函数" class="headerlink" title="2.工厂函数和构造函数"></a>2.工厂函数和构造函数</h2><p>函数返回的是一个对象，即为工厂函数，直接调用即可获取对象。<br>构造函数又名构造器，如果一个函数被用来创建一个实例化对象那么这就是构造函数，<br>构造函数配合new关键字来创建对象。构造函数与普通函数无异，一般首字母大写，只是使用方式不同。</p>
 <h2 id="3-类和实例"><a href="#3-类和实例" class="headerlink" title="3.类和实例"></a>3.类和实例</h2><p>类就是针对具有相同特征和特征对象的概述，在es6之前没有类，可以认为构造函数即为类。<br>通过构造函数创建出来的对象即为实例，实例的类型即为构造函数的名字，一般为Object</p>
 <h2 id="4-原型"><a href="#4-原型" class="headerlink" title="4.原型"></a>4.原型</h2><p>原型即为函数的prototype属性，在定义任何一个函数时，函数自己会创建一个对象，这个对象作为函数的prototype的属性存在。<br>作用即可以让实例对象共享和使用原型对象里面的属性和方法。</p>
-<h2 id="5-prototype"><a href="#5-prototype" class="headerlink" title="5.prototype"></a>5.prototype</h2><ul>
-<li>函数默认自有的一个属性，只在函数中存在</li>
-<li>因为他存的是原型对象的地址，所以又叫显示原型</li>
-<li>可以让以后实例的<strong>proto</strong>属性来根据构造函数的prototype来定</li>
-</ul>
-<h2 id="6-proto"><a href="#6-proto" class="headerlink" title="6.proto"></a>6.<strong>proto</strong></h2><ul>
-<li>所有对象都有的属性</li>
-<li>因为它存储的是函数隐式原型地址，所有又叫隐式原型</li>
-<li>当访问实例对象的属性时，如果自己没有，就去访问<strong>proto</strong>属性指向的原型对象的属性</li>
-</ul>
-<h2 id="7-new构造函数自动执行的4个步骤"><a href="#7-new构造函数自动执行的4个步骤" class="headerlink" title="7.new构造函数自动执行的4个步骤"></a>7.new构造函数自动执行的4个步骤</h2><ul>
-<li>自动创建一个新对象(开辟一个内存空间)</li>
-<li>给对象添加隐式原型属性(<strong>proto</strong> = 构造函数.prototype)</li>
-<li>执行构造器(这时候构造器里面的this指向新创建出来的对象)</li>
-<li>返回此对象的地址</li>
-</ul>
-<h2 id="8-属性查找规则和constructor"><a href="#8-属性查找规则和constructor" class="headerlink" title="8.属性查找规则和constructor"></a>8.属性查找规则和constructor</h2><p>先找自身，如果找到即返回，找不到则沿着<strong>proto</strong>一直往上找<br>constructor该属性的值是产生这个原型对象的函数地址</p>
-
-          
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/06/面向对象01/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
